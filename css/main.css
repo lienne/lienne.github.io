@@ -84,15 +84,18 @@ body, html {
 	text-shadow: 2px 2px #010101;
 	font-size: 27px;
 	letter-spacing: 8px;
-
 }
 
-.ptext .border {
-	background-color: transparent;
+.ptext .border-main {
+	border-color: transparent;
 }
 
-.ptext .border.main {
-	/* padding-bottom: 22px; */
+.ptext .border-2 {
+	border-color: transparent;
+}
+
+.ptext .border-3 {
+	border-color: transparent;
 }
 
 /*
