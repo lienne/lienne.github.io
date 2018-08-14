@@ -45,18 +45,18 @@ body, html {
 	background-attachment: fixed;
 }
 
-/* .pimg1 {
-	background-image: url('../img/starrynight.jpg');
+.pimg1 {
+	background-image: url('../img/Teal-Coral/background-sunset-boat.jpg');
 	min-height: 100%;
-} */
+}
 
 .pimg2 {
-	background-image: url('../img/unfocusedspace.jpg');
+	background-image: url('../img/Teal-Coral/Dusk-Sunrise-Beach.jpg');
 	min-height: 400px;
 }
 
 .pimg3 {
-	background-image: url('../img/starrysky.jpg');
+	background-image: url('../img/Teal-Coral/Reflection-Dusk-Ocean-Boat.jpg');
 	min-height: 400px;
 }
 
