@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About - Liana Severo</title>
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Coming Soon!</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
+  <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 <style>
   body {
-    background: url('img/pikachu.gif') no-repeat center center fixed;
+    background: url('img/sleeping_snorlax.gif') no-repeat center center fixed;
     padding-top: 100px;
   }
 
@@ -38,25 +42,28 @@
     padding-top: 555px;
     background: none
   }
+
 </style>
 
-<body style="height:1500px">
+<body>
+
+  <!-- Navigation Bar begin -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-
-      <div class="navbar-header">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+        <a class="navbar-brand"  href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
       </div>
-
-      <div class="collapse navbar-collapse" id=".navbar-collapse">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">About</a></li>
+          <li><a href="/about.html">About</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -72,12 +79,14 @@
               <li><a href="#">Download pdf</a></li>
             </ul>
           </li>
-          <li><a href="/comingsoon.html">Coming Soon</a></li>
+          <li class="active"><a href="#">Coming Soon!</a></li>
         </ul>
       </div>
-
+      <!-- navbar collapse -->
     </div>
+    <!-- container -->
   </nav>
+  <!-- Navigation Bar end -->
 
   <header class="intro-header">
     <div class="container">
@@ -91,23 +100,22 @@
     </div>
   </header>
 
-<div class="container">
-  <div class="jumbotron">
-  <div class="row content">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-  </div>
-</div>
+  <footer class="page-footer text-center">
+    <div class="jumbotron">
+      <div class="row content">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
 
-<div class="container-fluid text-center">
-  <ul class="breadcrumb">
-    <li><a href="/">Home</a></li>
-    <li class="active">About</li>
-    <li><a href="/projects.html">Projects</a></li>
-    <li><a href="/comingsoon.html">Resume</a></li>
-  </ul>
-</div>
+    <ul class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/comingsoon.html">Resume</a></li>
+    </ul>
+  </footer>
 
 </body>
 </html>
