@@ -2,189 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Liana Severo</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>The Radiant Milky Way</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- Add Custom CSS here -->
-  <!-- <link rel="stylesheet" type="text/css" href="mycss/main.css"/> -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="mycss/main.css"/>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-
-<style>
-  body {
-    background: url('img/pokemon_eeveelutions.png') no-repeat center center fixed;
-    padding-top: 100px;
-    background-color: #262626;
-  }
-
-  .intro-header .site-heading, .intro-header .page-heading {
-    text-align: center;
-  }
-
-  .intro-header .site-heading h1, .intro-header .page-heading h1 {
-    margin-top: 0;
-    font-size: 50px;
-    font-weight: 800;
-  }
-
-  h1 {
-    color: #00cc99;
-    font-family: "Lucida Consolel", Monaco, monospace;
-  }
-
-  .container-fluid .col-sm-4 {
-    text-align: center;
-    align-items: center;
-  }
-
-  .jumbotron {
-    padding-top: 555px;
-    background: none
-  }
-
-</style>
-
 <body>
 
-<!-- Navigation Bar begin -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="mailto:lianasevero3@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/about.html">About</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/projects.html">Project 1</a></li>
-              <li><a href="/projects.html">Project 2</a></li>
-              <li><a href="/projects.html">Project 3</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">View</a></li>
-              <li><a href="#">Download pdf</a></li>
-            </ul>
-          </li>
-          <li><a href="/comingsoon.html">Coming Soon</a></li>
-        </ul>
-      </div>
-      <!-- navbar collapse -->
-    </div>
-    <!-- container -->
-  </nav>
-  <!-- Navigation Bar end -->
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Liana Severo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<header class="intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="site-heading">
-          <h1>Under Construction!</h1>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about.html">About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/projects.html">Project 1</a>
+          <a class="dropdown-item" href="/projects.html">Project 2</a>
+          <a class="dropdown-item" href="/projects.html">Project 3</a>
         </div>
-      </div>
-    </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resume
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">View</a>
+          <a class="dropdown-item" href="#">Download PDF</a>
+        </div>
+      </li>
+    </ul>
   </div>
-</header>
 
-<div class="container-fluid text-center">
-  <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-  </div>
-</div>
+  </nav>
 
-<footer class="page-footer text-center fixed-bottom">
-  <div class="jumbotron">
-  <div class="row content">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-  </div>
-</div>
+  <!-- Jumbotron -->
+  <!-- <div class="jumbotron jumbotron-fluid">
 
+  </div> -->
 
-  <ul class="breadcrumb">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/projects.html">Projects</a></li>
-    <li><a href="/comingsoon.html">Resume</a></li>
-  </ul>
-</footer>
-
-<!-- <div id="section1" class="container-fluid">
   <div class="pimg1">
     <div class="ptext">
-      <div class="border-main" style="Fixed; top:-20px;">
-        <h1>"A diamond is a piece of coal that stuck to the job."</h1>
-        <h1>-- Michael Larsen</h1>
+      <div class="border main" style="Fixed; top:-20px;">
+        <!-- You are my whole universe.
+        Your breath becomes the radiant milky way. -->
+        <h1>You are my whole universe.</h1>
+        <h1>Your breath becomes the radiant milky way.</h1>
       </div>
     </div>
   </div>
 
-  <section class="section section-light">
+   <section class="section section-light">
     <h2>Section One (About)</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorum repudiandae deserunt reprehenderit autem asperiores, quis quia, cumque magnam dicta itaque ipsum minima dolorem fugit velit repellat. Sunt dignissimos laborum, cumque, culpa ab similique? Eaque sunt, sint ad quasi vel aut reiciendis mollitia delectus! Illo impedit, deserunt eos ex atque!
     </p>
   </section>
 
-  <div class="pimg2">
+   <div class="pimg2">
     <div class="ptext">
-      <span class="border-2">
+      <span class="border">
         Image Two Text
       </span>
     </div>
   </div>
 
-  <section class="section section-dark">
+   <section class="section section-dark">
     <h2>Section Two (Something)</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, tempore!
     </p>
   </section>
 
-  <div class="pimg3">
+   <div class="pimg3">
     <div class="ptext">
-      <span class="border-3">
+      <span class="border">
         Image Three Text
       </span>
     </div>
   </div>
 
-  <section class="section section-dark">
+   <section class="section section-dark">
     <h2>Section Three (Something)</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, tempore!
     </p>
   </section>
 
-  <div class="pimg1">
+   <div class="pimg1">
     <div class="ptext">
+      <span class="border">
+        <!-- <h1>You are my whole universe.</h1>
+        <h1>Your breath becomes the radiant milky way.</h1> -->
+      </span>
     </div>
   </div>
 
-</div> -->
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb text-center">
+    <ol class="breadcrumb align-items-center">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">About</a></li>
+      <li class="breadcrumb-item"><a href="#">Projects</a></li>
+      <li class="breadcrumb-item"><a href="#">Resume</a></li>
+    </ol>
+  </nav>
 
+
+  <!-- Optional JavaScript -->
+  <!-- JQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
