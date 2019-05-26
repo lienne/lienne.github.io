@@ -23,23 +23,25 @@ body, html {
 }
 
 .pimg1 {
-	background-image: url('../img/starrynight.jpg');
+	background-image: url('../img/white-paint-background.jpg');
 	min-height: 100%;
 }
 
  .pimg2 {
-	background-image: url('../img/unfocusedspace.jpg');
+	background-image: url('../img/bloom.jpg');
 	min-height: 400px;
+	/* opacity: 0.50; */
 }
 
  .pimg3 {
-	background-image: url('../img/starrysky.jpg');
+	background-image: url('../img/blue_blossom.jpg');
 	min-height: 400px;
 }
 
 .section {
 	text-align: center;
 	padding: 50px 80px;
+	font-family: 'Sofia';font-size: 22px;
 }
 
  .section-light {
