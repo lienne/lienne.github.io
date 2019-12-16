@@ -20,7 +20,8 @@ function initGame() {
             // the state for each cell.
             // The tail of the snake is kept track of here.
             var cell = {
-                snake: 0
+                snake: 0,
+                apple: 0
             };
 
             // Create a div and store it in the cell object
@@ -47,7 +48,7 @@ function startGame() {
     // Default position for the snake in the middle of the board
     snakeX = Math.floor(BOARDWIDTH / 2);
     snakeY = Math.floor(BOARDHEIGHT / 2);
-    snakeLength = 5;
+    snakeLength = 4;
     snakeDirection = 'Up';
 
     // Set the center of the board to contain a snake
@@ -66,7 +67,7 @@ function startGame() {
     placeApple();
 }
 
-function gameLoop() {
+async function gameLoop() {
     // Update position depending on which direction the snake is moving
     switch (snakeDirection) {
         case 'Up':
@@ -85,13 +86,13 @@ function gameLoop() {
 
     // Wall collision
     if (snakeX < 0 || snakeY < 0 || snakeX >= BOARDWIDTH || snakeY >= BOARDHEIGHT) {
-        sleep(1000);
+        await sleep(1000);
         startGame();
     }
 
     // Tail collision
     if (board[snakeY][snakeX].snake > 0) {
-        sleep(1000);
+        await sleep(1000);
         startGame();
     }
 
@@ -122,7 +123,14 @@ function gameLoop() {
         }
     }
 
-    setTimeout(gameLoop, 1000 / snakeLength);
+    var snakeSpeed = 1000 / snakeLength;
+
+    // Cap the snake speed so it doesn't get too fast as the snake keeps growing
+    if(snakeLength >= 14) {
+        snakeSpeed = 1000 / 14;
+    }
+
+    setTimeout(gameLoop, snakeSpeed);
 }
 
 // Handle input from beyboard (no mobile support yet)
@@ -130,15 +138,19 @@ function enterKey(event) {
     // Update direction depending on key hit
     switch (event.key) {
         case 'ArrowUp':
+            if(snakeDirection == 'Down') break;
             snakeDirection = 'Up';
             break;
         case 'ArrowDown':
+            if(snakeDirection == 'Up') break;
             snakeDirection = 'Down';
             break;
         case 'ArrowLeft':
+            if(snakeDirection == 'Right') break;
             snakeDirection = 'Left';
             break;
         case 'ArrowRight':
+            if(snakeDirection == 'Left') break;
             snakeDirection = 'Right';
             break;
         default:
@@ -159,10 +171,15 @@ function placeApple() {
 }
 
 // Homemade sleep function
-function sleep(milliseconds) {
+function sleep_old(milliseconds) {
     const date = Date.now();
     let currentDate = null;
     do {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
+}
+
+// Better homemade sleep function
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
