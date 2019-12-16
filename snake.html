@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake! Snake!</title>
+    <style>
+        html {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        #board {
+            width: calc(26 * 24px);
+            margin: auto;
+        }
+
+        #board div {
+            background-color: black;
+            border: 1px solid grey;
+            box-sizing: border-box;
+            float: left;
+            width: 24px;
+            height: 24px;
+        }
+
+        #board .snake {
+            background-color: green;
+        }
+
+        #board .apple {
+            background-color: red;
+        }
+    </style>
+
+    <script src="js/snake.js"></script>
+</head>
+
+<body onload="initGame()" onkeydown="enterKey(event)">
+
+    <h1>Snake</h1>
+    <div id="board"></div>
+    
+</body>
+</html>
