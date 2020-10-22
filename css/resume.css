@@ -195,6 +195,50 @@ a:hover, a:focus, a:active {
   color: #f18973;
 }
 
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  /* width: 18rem; */
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card-img-top {
+  height:250px;
+  width:100%;
+  object-fit: cover;
+}
+
+.card-front {
+  grid-area: frontAndBack;
+}
+
+.card-back {
+  grid-area: frontAndBack;
+  /* border: 1px solid #343a40; */
+  transform: rotateY(-180deg);
+  padding: 5%;
+}
+
+.card-text, .card-title {
+  text-align: center;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
 .footer-copyright {
   color: #80ced6;
 }
