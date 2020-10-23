@@ -239,6 +239,15 @@ a:hover, a:focus, a:active {
   transform: rotateY(180deg);
 }
 
+.sub-div {
+  position: relative;
+  bottom: 20px;
+}
+
+.card-footer {
+  background-color: white;
+}
+
 .footer-copyright {
   color: #80ced6;
 }
