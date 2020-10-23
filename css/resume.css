@@ -215,7 +215,7 @@ a:hover, a:focus, a:active {
 
 .border-animation:after {
   content: "";
-  background: linear-gradient(45deg, #ccc 48.9%, #80ced6 49%);
+  background: linear-gradient(45deg, #80ced6 48.9%,  #f18973 49%);
   background-size: 300% 300%;
   border-radius: 10px;
   position: absolute;
