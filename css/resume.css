@@ -195,6 +195,69 @@ a:hover, a:focus, a:active {
   color: #f18973;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+
+/* .store-container {
+  line-height:0;
+  margin: 50px auto;
+  width: 50%;
+} */
+
+#store {
+  animation: fadeIn 0.8s ease-in;
+}
+
+.border-animation {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.border-animation:after {
+  content: "";
+  background: linear-gradient(45deg, #ccc 48.9%, #80ced6 49%);
+  background-size: 300% 300%;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  z-index: -1;
+  animation: borderGradient 8s linear both infinite;
+}
+
+@keyframes borderGradient {
+  0%,
+  100% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#browser {
+  transform: translateY(-100%);
+  -webkit-animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+  animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translate(0, -100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 .card-container {
   display: grid;
   perspective: 700px;
@@ -237,11 +300,6 @@ a:hover, a:focus, a:active {
 
 .card-container:hover .card-flip {
   transform: rotateY(180deg);
-}
-
-.sub-div {
-  position: relative;
-  bottom: 20px;
 }
 
 .card-footer {
