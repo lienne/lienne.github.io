@@ -1,793 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Liana Severo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="favicon_io/site.webmanifest">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- Custom CSS -->
+    <!-- <link href="css/resume.css" rel="stylesheet"> -->
+    <link href="/assets/css/timeline.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <title>Welcome!</title>
+	</head>
+	<body >
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-  <!-- Custom CSS -->
-  <link href="css/resume.css" rel="stylesheet">
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="https://www.linkedin.com/in/liana-severo/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
+						<a href="https://github.com/lienne" class="icon brands fa-github"><span>Github</span></a>
+						<a href="https://devpost.com/lienne" class="icon solid fa-laptop-code"><span>Devpost</span></a>
+						<a href="mailto:lianasevero3@gmail.com" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
 
-  <!-- Google Fonts -->
-  <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Sofia'> -->
+				<!-- Main -->
+					<div id="main">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-</head>
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<p>Hi! I'm</p>
+									<h1>Liana Severo.</h1>
+									<p>A Software Engineer open to exciting new opportunities.</p>
+                  <p>Check out my <a href="/documents/Liana_Severo_Resume.pdf">Resume</a>, if you are so inclined.</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/pfp2.png" alt="" />
+								</a>
+							</article>
 
-<!-- Body Start -->
+						<!-- Work -->
+							<article id="work" class="panel">
+								<section class="timeline">
+                  <div class="container">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
 
-<body>
-
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Liana Severo</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pfp2.png" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#letters">Letters of Recommendation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-        <div class="w-100">
-          <h1 class="mb-0">Liana
-            <span class="text-primary">Severo</span>
-          </h1>
-          <div class="subheading mb-5">
-            <a href="mailto:lianasevero3@gmail.com">lianasevero3@gmail.com</a>
-          </div>
-
-          <div class="border-animation p-5">
-            <defs>
-              <filter id="f1">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="0,4" />
-              </filter>
-              <circle id="sky-circle" fill="none" class="stroke" cx="198.7" cy="314" r="5.5"/>
-
-              <p class="lead mb-5">Hello!</br>
-              </br>
-                I'm Liana, a Software Engineer at Microsoft and a Mathematics and Computer Science graduate from the University of Central Florida. But you can also
-                call me Belle.</br>
-
-                Apart from my quest to be a badass Software Engineer, I also thoroughly enjoy playing video games,
-                reading fantasy novels, sweets, and drawing. Check some of them out <a href="https://www.instagram.com/artbylienne/">here</a>!</br>
-
-                My current obsession is Zelda - Breath of the Wild.</br>
-
-                My favorite music genre is Uplifting Trance, and my favorite band of all time is Above & Beyond. <a href="https://www.youtube.com/user/aboveandbeyondtv">Check them out!</a></br>
-
-                You can also view my <a href="https://www.linkedin.com/in/liana-severo/">LinkedIn</a>, my <a href="https://github.com/lienne">Github page</a>, or download my <a href="#">Resume</a>, if you're into that sorta thing.</p>
-              <div class="social-icons">
-                <a href="https://www.linkedin.com/in/liana-severo/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/lienne">
-                  <i class="fab fa-github-alt"></i>
-                </a>
-                <a href="https://www.instagram.com/artbylienne/">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://devpost.com/lienne">
-                  <i class="fas fa-laptop-code"></i>
-                </a>
-                <a href="mailto:lianasevero3@gmail.com">
-                  <i class="far fa-envelope"></i>
-                </a>
-              </div>
-
-            </defs>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-        <div class="w-100">
-          <h2 class="mb-5">Projects</h2>
-
-          <!-- Project Cards -->
-          <div class="container">
-            <div class="row">
-
-              <!-- heart.ai -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- heart.ai Front -->
-                  <div class="card-front">
-                    <img src="img/heartai-logo-transparent.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">heart.ai</h4>
-                      <p class ="card-text">A heart monitoring platform for everyone</p>
-                    </div>
-                  </div>
-                  <!-- End heart.ai Front -->
-
-                  <!-- heart.ai Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Vandyhacks VII</h4>
-                      <p class="card-text">Best Overall - 1st Place</p>
-                      <p class="card-text">Best Use of Google Cloud: COVID-19 Hackathon Fund</p>
-                      <p class="card-text">Best Hardware Hack (Digi-Key)</p>
-                      <p class="card-text">Best Data Hack (HRT)</p>
-                      <div class="col text-center card-footer">
-                        <a href="https://devpost.com/software/heart-ai-rzsb76" class="btn btn-outline-info m-2">Devpost</a>
-                        <a href="https://github.com/heartt-ai" class="btn btn-outline-info m-2">Github</a>
+                      <div class="timeline-content js--fadeInLeft">
+                        <h2>Microsoft</h2>
+                        <p>Dec 2020 - Sept 2024</p>
+                        <p>During my time at Microsoft, I got to work alongside some of the brightest minds in tech while contributing to large-scale, impactful projects. I focused on building reliable, scalable software solutions while honing my skills in cloud technologies and backend development. It was a dynamic environment that pushed me to grow as a software engineer and collaborate across diverse teams.</p>
                       </div>
                     </div>
-                  </div>
-                  <!-- End heart.ai Back -->
-                </div>
-              </div>
-              <!-- End heart.ai -->
 
-              <!-- insights.MD -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- insights.MD Front -->
-                  <div class="card-front">
-                    <img src="img/insights-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">insights.MD</h4>
-                      <p class ="card-text">Optimizing the Medical Monitoring Process</p>
-                    </div>
-                  </div>
-                  <!-- End insights.MD Front -->
-
-                  <!-- insights.MD Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">HackTheU: Go Beyond</h4>
-                      <p class="card-text">Best Overall - 1st Place</p>
-                      <p class="card-text">Best Hardware Hack</p>
-                      <div class="col text-center card-footer">
-                        <a href="https://devpost.com/software/insights-md" class="btn btn-outline-info m-2">Devpost</a>
-                        <a href="https://github.com/insights-MD" class="btn btn-outline-info m-2">Github</a>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
+                      <div class="timeline-content js--fadeInRight">
+                        <h2>JPMorgan Chase</h2>
+                        <p>Jun 2020 - Aug 2020</p>
+                        <p>While at JPMorgan, I participated in their 'Code for Good' project, where my team built a website for a financial nonprofit organization. It was an exciting experience that combined my passion for tech with meaningful social impact. Collaborating with other developers in a high-energy, mission-driven environment taught me a lot about teamwork, rapid prototyping, and delivering real-world solutions under tight deadlines.</p>
                       </div>
                     </div>
-                  </div>
-                  <!-- End insights.MD Back -->
-                </div>
-              </div>
-              <!-- End insights.MD -->
 
-              <!-- learn.ai -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- learn.ai Front -->
-                  <div class="card-front">
-                    <img src="img/learn-ai-logo.png" class="card-img-top img-fluid">
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
 
-                    <div class="card-block">
-                      <h4 class="card-title">learn.ai</h4>
-                      <p class ="card-text">ML-Accelerated Learning Solution</p>
-                    </div>
-                  </div>
-                  <!-- End learn.ai Front -->
-
-                  <!-- learn.ai Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">ShellHacks 2020</h4>
-                      <p class="card-text">Best Use of Azure for Social Good by Microsoft</p>
-                      <p class="card-text">Best Diversity Hack by FCA - 3rd Place</p>
-                      <p class="card-text">Wolfram Award by Wolfram Language</p>
-                      <div class="col text-center card-footer">
-                        <a href="https://devpost.com/software/learn-ai" class="btn btn-outline-info m-2">Devpost</a>
-                        <a href="https://github.com/learnn-ai" class="btn btn-outline-info m-2">Github</a>
+                      <div class="timeline-content js--fadeInLeft">
+                        <h2>IZEA</h2>
+                        <p>Sept 2019 - Dec 2019</p>
+                        <p>At IZEA, I worked on developing influencer marketing platforms that connect brands with creators. My role involved building and enhancing core platform features, improving performance, and ensuring a seamless user experience. It was a dynamic environment where I collaborated closely with product managers and designers, turning ideas into impactful software solutions that drive the creator economy.</p>
                       </div>
                     </div>
-                  </div>
-                  <!-- End learn.ai Back -->
-                </div>
-              </div>
-              <!-- End learn.ai -->
 
-              <!-- ModiBot -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- Modibot Front -->
-                  <div class="card-front">
-                    <img src="img/ModiBot.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">ModiBot</h4>
-                      <p class ="card-text">Discord Bot written in Python.</p>
-                    </div>
-                  </div>
-                  <!-- End Modibot Front -->
-
-                  <!-- Modibot Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Also Lancelot</h4>
-                      <p class="card-text">Used for moderation and automation of KnightHacks 2020 Discord server.</p>
-                      <div class="col text-center card-footer">
-                        <a href="https://knighthacks.org/discord" class="btn btn-outline-info m-2">KnightHacks Discord Server</a>
-                        <a href="https://github.com/lienne/ModiBot" class="btn btn-outline-info m-2">Github</a>
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
+                      <div class="timeline-content js--fadeInRight">
+                        <h2>CDK Global</h2>
+                        <p>Summer 2018 & Summer 2019</p>
+                        <p>At CDK Global, I worked on automotive industry software, focusing on building scalable, data-driven solutions. I contributed to key features that enhanced user experience and streamlined business processes for dealerships. It was a great opportunity to sharpen my full-stack development skills while collaborating with a talented, supportive team in an agile environment.</p>
                       </div>
                     </div>
-                  </div>
-                  <!-- End Modibot Back -->
-                </div>
-              </div>
-              <!-- End Modibot -->
 
-              <!-- NoBias -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- NoBias Front -->
-                  <div class="card-front">
-                    <img src="img/no-bias.png" class="card-img-top img-fluid">
+                    <!-- Item 5 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
 
-                    <div class="card-block">
-                      <h4 class="card-title">NoBias</h4>
-                      <p class ="card-text">A simple way to remove unconscious bias out of the hiring process.</p>
-                    </div>
-                  </div>
-                  <!-- End NoBias Front -->
-
-                  <!-- NoBias Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">ShellHacks 2019</h4>
-                      <p class="card-text">Didn't win anything :( lol</p>
-                      <p class="card-text">But it was a fun project and I learned tons!</p>
-                      
-                      <div class="col text-center card-footer">
-                        <a href="https://devpost.com/software/shellhacks" class="btn btn-outline-info m-2">Devpost</a>
-                        <a href="https://github.com/Smyrski/shellhacks" class="btn btn-outline-info m-2">Github</a>
+                      <div class="timeline-content js--fadeInLeft">
+                        <h2>Knight Hacks</h2>
+                        <p>Sept 2017 - Oct 2020</p>
+                        <p>During my time with KnightHacks, UCF’s official hackathon organization, I helped organize large-scale hackathons that brought together hundreds of developers, designers, and innovators. I worked on event logistics, tech infrastructure, and mentorship coordination, ensuring a fun and productive environment for participants. It was an incredible experience that strengthened my leadership, collaboration, and problem-solving skills while fostering a vibrant tech community.</p>
                       </div>
                     </div>
-                  </div>
-                  <!-- End NoBias Back -->
-                </div>
-              </div>
-              <!-- End NoBias -->
 
-              <!-- Corgo Connect -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- Corgo Connect Front -->
-                  <div class="card-front">
-                    <img src="img/corgo-connect.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Corgo Connect</h4>
-                      <p class ="card-text">Corgi-based contact management website.</p>
-                    </div>
-                  </div>
-                  <!-- End Corgo Connect Front -->
-
-                  <!-- Corgo Connect Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">POOSD</h4>
-                      <p class="card-text">Group project for my Principles of Object Oriented Software Development class.</p>
-                      
-                      <div class="col text-center card-footer">
-                        <a href="https://github.com/poosd-gang" class="btn btn-outline-info m-2">Github</a>
+                    <!-- Item 6 -->
+                    <div class="timeline-item">
+                      <div class="timeline-img"></div>
+                      <div class="timeline-content js--fadeInRight">
+                        <h2>Valencia</h2>
+                        <p>Oct 2012 - Oct 2017</p>
+                        <p>As a Mathematics Tutor at Valencia College, I helped students strengthen their understanding of math concepts ranging from algebra to calculus. Working one-on-one and in group settings, I tailored explanations to different learning styles, making complex topics more approachable. It was a fulfilling experience that honed my communication skills and deepened my appreciation for problem-solving.</p>
                       </div>
                     </div>
+
+
                   </div>
-                  <!-- End Corgo Connect Back -->
-                </div>
-              </div>
-              <!-- End Corgo Connect -->
-
-              <!-- Snake -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- Snake Front -->
-                  <div class="card-front">
-                    <img src="img/snake-game.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Snake</h4>
-                      <p class ="card-text">Play a snake game I made from scratch!</p>
-                    </div>
-                  </div>
-                  <!-- End Snake Front -->
-
-                  <!-- Snake Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Snake Game</h4>
-                      <p class="card-text">Does not support mobile.</p>
-                      
-                      <div class="col text-center card-footer">
-                        <a href="https://lienne.github.io/snake.html" class="btn btn-outline-info m-2">Play!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Snake Back -->
-                </div>
-              </div>
-              <!-- End Snake -->
-
-            </div>
-          </div>
-
-          <h2 class="mb-5">Workshops</h2>
-
-          <h3>Interview Prep</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/_AhHFXhVTxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <br>
-          <br>
-          <br>
-          <br>
-
-          <h3>Write a Discord Bot in Python</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/1cuhODT6MGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </div>
-      </section>
-
-    <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-        <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
-
-          <!-- Experience Cards -->
-          <div class="container">
-            <div class="row">
-
-              <!-- Microsoft -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- Microsoft Front -->
-                  <div class="card-front">
-                    <img src="img/microsoft_logo.gif" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Microsoft</h4>
-                      <p class ="card-text">Software Engineer</p>
-                      <p class="card-text">Present</p>
-                    </div>
-                  </div>
-                  <!-- End Microsoft Front -->
-
-                  <!-- Microsoft Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Dec 2020 - Present</h4>
-                    </div>
-                  </div>
-                  <!-- End Microsoft Back -->
-                </div>
-              </div>
-              <!-- End Microsoft -->
-
-              <!-- JPMorgan -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- JPMorgan Front -->
-                  <div class="card-front">
-                    <img src="img/Chase_Logo_Animation.gif" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">JPMorgan Chase</h4>
-                      <p class ="card-text">Software Engineer Intern</p>
-                      <p class="card-text">Summer 2020</p>
-                    </div>
-                  </div>
-                  <!-- End JPMorgan Front -->
-
-                  <!-- JPMorgan Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">June 2020 - Aug 2020</h4>
-                      <p>- Worked alongside a team of full-time employees on JPMorgan's Code For Good Project</p>
-                      <p>- Built a Networking and Training web app for a Financial Literacy nonprofit, using Java Spring Boot, React, AWS, and PostgreSQL</p>
-                    </div>
-                  </div>
-                  <!-- End JPMorgan Back -->
-                </div>
-              </div>
-              <!-- End JPMorgan -->
-
-              <!-- CDK Global 1 -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- CDK Global 1 Front -->
-                  <div class="card-front">
-                    <img src="img/cdk-global-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">CDK Global</h4>
-                      <p class ="card-text">Software Engineer Intern</p>
-                      <p class="card-text">Summer 2019</p>
-                    </div>
-                  </div>
-                  <!-- End CDK Global 1 Front -->
-
-                  <!-- CDK Global 1 Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">June 2019 - Aug 2019</h4>
-                      <p>- Worked on the Digital Advertisement Platform team as a full-stack engineer to build a data
-                        transparency tool.</p>
-                      <p>- Technologies used included Java, Spring Boot, Maven, Angular, Agile w/ weekly sprints, and TDD w/ JUnit 4.</p>
-
-                      <div class="col text-center card-footer">
-                        <a href="/documents/2019LianaRecommendationCDK.pdf" class="btn btn-outline-info m-2">Rec Letter</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!-- End CDK Global 1 Back -->
-                </div>
-              </div>
-              <!-- End CDK Global 1 -->
-
-              <!-- CDK Global 2 -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- CDK Global 2 Front -->
-                  <div class="card-front">
-                    <img src="img/cdk-global-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">CDK Global</h4>
-                      <p class ="card-text">Software Engineer Intern</p>
-                      <p class="card-text">Summer 2018</p>
-                    </div>
-                  </div>
-                  <!-- End CDK Global 2 Front -->
-
-                  <!-- CDK Global 2 Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">June 2018 - Aug 2018</h4>
-                      <p>- Worked with the KPI team to build an internal automation tool.</p>
-                      <p>- Built a Leads Re-submission UI using Java, Spring Boot, and React.</p>
-                      <div class="col text-center card-footer">
-                        <a href="/documents/LianaSeveroRecommendationLetter_Summer18.pdf" class="btn btn-outline-info m-2">Rec Letter</a>
-                      </div>
-
-                    </div>
-                  </div>
-                  <!-- End CDK Global 2 Back -->
-                </div>
-              </div>
-              <!-- End CDK Global 2 -->
-
-              <!-- KnightHacks -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- KnightHacks Front -->
-                  <div class="card-front">
-                    <img src="img/knighthacks-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Knight Hacks @ UCF</h4>
-                      <p class ="card-text">VP / Hackathon Organizer / Secretary</p>
-                      <p class ="card-text"></p>
-                    </div>
-                  </div>
-                  <!-- End KnightHacks Front -->
-
-                  <!-- KnightHacks Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Sept 2017 - Oct 2020</h4>
-                      <p>- Helped organize UCF's yearly hackathon, Knight Hacks, which is one of the largest in Florida</p>
-                      <p>- Held workshops on various technical topics and performed several other club running activities</p>
-                      <div class="col text-center card-footer">
-                        <a href="https://knighthacks.org/" class="btn btn-outline-info m-2">Website</a>
-                        <a href="https://knighthacks.org/discord" class="btn btn-outline-info m-2">Discord</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End KnightHacks Back -->
-                </div>
-              </div>
-              <!-- End KnightHacks -->
-
-              <!-- Valencia -->
-              <div class="col-md-4 card-container">
-                <div class="card-flip shadow p-3 mb-5 bg-white rounded">
-                  <!-- Valencia Front -->
-                  <div class="card-front">
-                    <img src="img/valencia-college-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Valencia College</h4>
-                      <p class ="card-text">Curriculum Assistant / Mathematics Tutor / Teaching Assistant</p>
-                      <p class ="card-text">CRLA National Tutor Certification Level 2</p>
-                    </div>
-                  </div>
-                  <!-- End Valencia Front -->
-
-                  <!-- Valencia Back -->
-                  <div class="card-back border border-info">
-                    <div class="card-block">
-                      <h4 class="card-title">Oct 2012 - Oct 2017</h4>
-                      <p>- Tutored students in mathematics courses, ranging from Pre-Algebra to Differential Equations</p>
-                      <p>- Held tutoring hours for varied classes and held workshops on relevant skills</p>
-                    </div>
-                  </div>
-                  <!-- End Valencia Back -->
-                </div>
-              </div>
-              <!-- End Valencia -->
-
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="letters">
-        <div class="w-100">
-          <h2 class="mb-5">Letters of Recommendation</h2>
-
-          <h5>
-            <p><a href="/documents/2019LianaRecommendationCDK.pdf">Recommendation Letter Summer 2019 - CDK Global Internship</a></p>
-            <!-- <embed src="/documents/2019LianaRecommendationCDK.pdf" type="application/pdf" width="800px" height="1000px"/> -->
-            <br />
-            <br />
-            <p><a href="/documents/LianaSeveroRecommendationLetter_Summer18.pdf">Recommendation Letter Summer 2018 - CDK Global Internship</a></p>
-            <!-- <embed src="/documents/LianaSeveroRecommendationLetter_Summer18.pdf" type="application/pdf" width="800px" height="1000px"/> -->
-          </h5>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-        <div class="w-100">
-          <h2 class="mb-5">Education</h2>
-
-          <!-- Education Cards -->
-          <div class="container">
-            <div class="row">
-
-              <!-- UCF -->
-              <div class="col-md-4 card-container">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <!-- UCF Front -->
-                  <div class="card-front">
-                    <img src="img/ucf-pegasus-logo.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">University of Central Florida</h4>
-                      <p class ="card-text">Bachelors of Science</p>
-                      <p class="card-text">Mathematics and Computer Science</p>
-                      <p class="card-text">August 2014 - May 2020</p>
-                    </div>
-                  </div>
-                  <!-- End UCF Front -->
-                </div>
-              </div>
-              <!-- End UCF -->
-
-              <!-- Valencia -->
-              <div class="col-md-4 card-container">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <!-- Valencia Front -->
-                  <div class="card-front">
-                    <img src="img/valencia-college-logo-2.png" class="card-img-top img-fluid">
-
-                    <div class="card-block">
-                      <h4 class="card-title">Valencia College</h4>
-                      <p class ="card-text">Associate of Arts Honors</p>
-                      <p class="card-text">Phi Theta Kappa Scholar</p>
-                      <p class="card-text">January 2012 - August 2014</p>
-                    </div>
-                  </div>
-                  <!-- End Valencia Front -->
-                </div>
-              </div>
-              <!-- End Valencia -->
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-        <div class="w-100">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-java" title="Java"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-python" title="Python 3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-html5" title="HTML5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js-square" title="JavaScript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-angular" title="Angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-node" title="Node.js"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm" title="npm"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fas fa-database" title="SQL"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-linux" title="Linux"></i>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="resume">
-          <div class="w-100">
-            <h2 class="mb-5">View my Resume</h2>
-            
-            <h4>
-              <p><a href="#">Check it out!</a></p>
-              <!-- <embed src="/documents/#" type="application/pdf" width="800px" height="1000px"/> -->
-            </h4>
-  
-          </div>
-        </section>
-  
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-        <div class="w-100">
-          <h2 class="mb-5">Interests</h2>
-
-            <div class="ab">
-              <img src="/img/abresized.png" style="max-width: 100%;">
-              <p></p>
-              <p>Above & Beyond has been my favorite band for about 15 years now and going strong.</p>
-              <p>They're a genre called Uplifting Trance - and for good reason.</p>
-              <p>Their songs and lyrics have gotten me through many rough times and hardships in life.</p>
-              <p>Their messages are full of love, life, and encouragement.</p>
-              <p>Every week they put out a 1hr radio show called <a href="https://www.aboveandbeyond.nu/abgt">Group Therapy</a>, and it's about 80% of what I listen to daily haha.</p>
-              <p>During the summer of 2019 I had the amazing opportunity to go to a 3-day camping festival in Washington where I got to meet the members and had a flag signed.</p>
-              <p>It was one of the happiest moments of my life!</p>
-              <p>I hope to have more opportunities in the future to meet the band members and continue sharing my love for what they do.</p>
-              <p>To quote one of my favorite songs by them...</p>
-              <p><em>Dream on, little dreamer <br />
-                  Follow all of your own signs <br />
-                  <br />
-                  You gotta gather up what you need <br />
-                  You gotta choose a direction <br />
-                  And when the moment is right for you <br />
-                  You gotta go <br />
-                  You gotta keep your ideals high <br />
-                  You gotta know that the sky belongs to no one <br />
-                  And you know you gotta go <br />
-                  <br />
-                  Dream on, little dreamer <br />
-                  This is how it all begins...</em></p>
-            </div>
-            <div style="margin-top:50px;" class="pokemon">
-              <img src="/img/pokemonlogoresized.png" style="max-width: 100%; margin-bottom:10px;">
-              <p>Pokemon has been one of my favorite franchises since it literally first came out - starting with the first games, Pokemon Red and Blue.</p>
-              <p>I've owned and played every single generation of games that has come out since.</p>
-              <p>As I grew up, I heard a lot that I should leave it behind because I was no longer a child, and for a long time I felt shame for still being a big fan.</p>
-              <p>But after a while I came to the conclusion that life is short and I don't have to leave my hobbies and interests behind as I grow older!</p>
-              <p>Playing Pokemon takes me back to a carefree time when I didn't have to worry about bills, or had any responsibilities besides some easy homework and a couple chores.</p>
-              <p>Pokemon is also a franchise with a lot of positive messages and good life lessons, and I am naturally attracted to positivity!</p>
-            </div>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-    </div>
-
-  </body>
-
-  <div class="footer-copyright text-center">
-    © Liana Severo 2019
-  </div>
-  <div class="footer-social-icons text-center">
-    <a href="https://www.linkedin.com/in/liana-severo/">
-      <i class="fab fa-linkedin-in fa-2x" title="My LinkedIn"></i>
-    </a>
-    <a href="https://github.com/lienne">
-      <i class="fab fa-github-alt fa-2x" title="My Github"></i>
-    </a>
-    <a href="https://www.instagram.com/artbylienne/">
-      <i class="fab fa-instagram fa-2x"></i>
-    </a>
-    <a href="https://devpost.com/lienne">
-      <i class="fas fa-laptop-code fa-2x"></i>
-    </a>
-    <a href="mailto:lianasevero3@gmail.com">
-      <i class="far fa-envelope fa-2x" title=" Shoot me a message!"></i>
-    </a>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- JQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-  <!-- Custom script -->
-  <script src="js/resume.js"></script>
-
-</body>
-
+                </section>
+							</article>
+
+						<!-- Contact -->
+							<!-- <article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form id="contact_form" action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="from_name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="from_email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article> -->
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Liana Severo.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<!-- <script>
+				const EMAILJS_PUBLIC_KEY = "{{ EMAILJS_PUBLIC_KEY }}";
+				const EMAILJS_SERVICE_ID = "{{ EMAILJS_SERVICE_ID }}";
+				const EMAILJS_TEMPLATE_ID = "{{ EMAILJS_TEMPLATE_ID }}";
+			</script> -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <!-- <script>
+        console.log("ahhh")
+        ScrollReveal().reveal('.js--fadeInLeft', {
+          origin: 'left',
+          distance: '300px',
+          easing: 'ease-in-out',
+          duration: 800,
+        });  </script> -->
+      <script src="/assets/js/timeline.js"></script>
+
+			<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+			<script type="text/javascript">
+				(function(){
+					emailjs.init({
+						publicKey: "EMAILJS_PUBLIC_KEY",
+					});
+				})();
+
+				window.onload = function() {
+					document.getElementById('contact_form').addEventListener('submit', function(event) {
+						event.preventDefault();
+						emailjs.sendForm('EMAILJS_SERVICE_ID', 'EMAILJS_TEMPLATE_ID', this)
+							.then((response) => {
+								console.log('SUCCESS!', response.status, response.text);
+								alert('Message sent successfully!');
+							}, (error) => {
+								console.error('EmailJS Error: ', error);
+								alert('Failed to send message. Please try again later.');
+							});
+					});
+				}
+			</script> -->
+	</body>
 </html>
