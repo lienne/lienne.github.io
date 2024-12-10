@@ -94,11 +94,11 @@ body {
     }
 }
 
-/* .timeline-content.js--fadeInLeft.visible,
+.timeline-content.js--fadeInLeft.visible,
 .timeline-content.js--fadeInRight.visible {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateY(0);
-} */
+}
 
 .timeline-img {
 	width: 30px;

@@ -1,64 +1,75 @@
-// Detect hash change
-window.addEventListener("hashchange", handleHashChange);
+document.querySelector("a[href='#work']").addEventListener("click", () => {
+    setTimeout(() => {
+        resetTimelineAnimation();  // Reset animations before running them
+        runTimelineAnimation(); 
+    }, 800);
+});
 
-// Detect on initial page load
-if (window.location.hash === "#work") {
-    console.log("Work section detected on page load");
-    runTimelineAnimation();
-}
-
-// Hash change handler
-function handleHashChange() {
+document.addEventListener("DOMContentLoaded", () => {
     if (window.location.hash === "#work") {
-      console.log("Work section detected on hash change");
-
-      // Reset all animated elements before running the animation
-      resetTimelineElements();
-
-      // Delay the animation after hash navigation to allow scrolling
-      setTimeout(runTimelineAnimation, 300); 
+        console.log("Work section detected on page load");
+        setTimeout(() => {
+            resetTimelineAnimation(); 
+            runTimelineAnimation(); 
+        }, 800);
     }
-}
+});
 
-function resetTimelineElements() {
-    $(".timeline-content")
-    .removeClass("js--fadeInLeft js--fadeInRight visible")
-    .css({ opacity: 0, transform: "translateY(50px)" });
-  console.log("Reset timeline elements");
+function resetTimelineAnimation() {
+    console.log("Resetting timeline...");
+
+    // Remove all ScrollReveal styles and classes
+    document.querySelectorAll('.timeline-content').forEach((el) => {
+        el.style.visibility = '';  // Reset visibility
+        el.style.transform = '';   // Reset transforms
+        el.style.opacity = '';     // Reset opacity
+        el.classList.remove('sr', 'sr--reveal', 'sr--visible');
+    });
+
+    if (window.sr) {
+        window.sr.destroy();  // Remove ScrollReveal instance if it exists
+    }
 }
 
 function runTimelineAnimation() {
-    console.log("Timeline JS Loaded");
+    console.log("Running timeline animation...");
 
-    window.sr = ScrollReveal({
-        reset: true, // Allows repeating animations on scroll
-        distance: "300px",
-        duration: 800,
-        easing: "ease-in-out",
-    });
-  
-    if ($(window).width() < 768) {
+    // Create new ScrollReveal instance
+    window.sr = ScrollReveal();
+
+    if (window.innerWidth < 768) {
         console.log("Mobile detected");
 
-        if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-            console.log("Switching animation to js--fadeInRight");
+        document.querySelectorAll('.timeline-content').forEach((el) => {
+            el.classList.remove('js--fadeInLeft');
+            el.classList.add('js--fadeInRight');
+        });
 
-            $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
-        }
-  
-        sr.reveal('.js--fadeInRight', { origin: 'right' });
-  
+        sr.reveal('.js--fadeInRight', { 
+            origin: 'right', 
+            distance: "300px",
+            duration: 800,
+            easing: "ease-in-out",
+            reset: false 
+        });
+
     } else {
-        console.log("Desktop Detected");
-        sr.reveal('.js--fadeInLeft', { origin: 'left' });
-        sr.reveal('.js--fadeInRight', { origin: 'right' });
-  
+        console.log("Desktop detected");
+
+        sr.reveal('.js--fadeInLeft', { 
+            origin: 'left', 
+            distance: "300px",
+            duration: 800,
+            easing: "ease-in-out",
+            reset: false 
+        });
+
+        sr.reveal('.js--fadeInRight', { 
+            origin: 'right', 
+            distance: "300px",
+            duration: 800,
+            easing: "ease-in-out",
+            reset: false 
+        });
     }
-
-    // Force visibility
-    $('.timeline-content').addClass('visible');
-
-    // Synchronize ScrollReveal if needed
-    sr.sync();
-  };
-  
+}

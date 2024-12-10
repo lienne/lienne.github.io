@@ -277,7 +277,7 @@
 					event.preventDefault();
 					event.stopPropagation();
 
-					config.target.toggleClass(config.visibleClass);
+					// config.target.toggleClass(config.visibleClass);
 
 				});
 
