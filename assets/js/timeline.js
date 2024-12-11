@@ -1,51 +1,68 @@
-document.querySelector("a[href='#work']").addEventListener("click", () => {
-    setTimeout(() => {
-        resetTimelineAnimation();  // Reset animations before running them
-        runTimelineAnimation(); 
-    }, 800);
-});
-
 document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.hash === "#work") {
-        console.log("Work section detected on page load");
-        setTimeout(() => {
-            resetTimelineAnimation(); 
-            runTimelineAnimation(); 
-        }, 800);
+    const sections = ["#work", "#projects"];
+
+    // Attach click listeners
+    sections.forEach((section) => {
+        document.querySelector(`a[href='${section}']`).addEventListener("click", () => {
+            handleSectionAnimation(section);
+        });
+    });
+
+    // Handle initial hash if present
+    const initialHash = window.location.hash;
+    if (sections.includes(initialHash)) {
+        console.log(`${initialHash} section detected on page load`);
+        handleSectionAnimation(initialHash);
     }
 });
 
-function resetTimelineAnimation() {
-    console.log("Resetting timeline...");
+// Detect direct URL navigation (hashchange event)
+window.addEventListener("hashchange", () => {
+    const currentHash = window.location.hash;
+    const sections = ["#work", "#projects"];
 
-    // Remove all ScrollReveal styles and classes
-    document.querySelectorAll('.timeline-content').forEach((el) => {
-        el.style.visibility = '';  // Reset visibility
-        el.style.transform = '';   // Reset transforms
-        el.style.opacity = '';     // Reset opacity
+    if (sections.includes(currentHash)) {
+        console.log(`Navigated directly to ${currentHash}`);
+        handleSectionAnimation(currentHash);
+    }
+});
+
+function handleSectionAnimation(section) {
+    setTimeout(() => {
+        resetTimelineAnimation(section); 
+        runTimelineAnimation(section); 
+    }, 800);
+}
+
+function resetTimelineAnimation(section) {
+    console.log(`Resetting timeline for ${section}...`);
+
+    document.querySelectorAll(`${section} .timeline-content`).forEach((el) => {
+        el.style.visibility = '';  
+        el.style.transform = '';   
+        el.style.opacity = '';     
         el.classList.remove('sr', 'sr--reveal', 'sr--visible');
     });
 
     if (window.sr) {
-        window.sr.destroy();  // Remove ScrollReveal instance if it exists
+        window.sr.destroy(); 
     }
 }
 
-function runTimelineAnimation() {
-    console.log("Running timeline animation...");
+function runTimelineAnimation(section) {
+    console.log(`Running timeline animation for ${section}...`);
 
-    // Create new ScrollReveal instance
     window.sr = ScrollReveal();
 
     if (window.innerWidth < 768) {
         console.log("Mobile detected");
 
-        document.querySelectorAll('.timeline-content').forEach((el) => {
+        document.querySelectorAll(`${section} .timeline-content`).forEach((el) => {
             el.classList.remove('js--fadeInLeft');
             el.classList.add('js--fadeInRight');
         });
 
-        sr.reveal('.js--fadeInRight', { 
+        sr.reveal(`${section} .js--fadeInRight`, { 
             origin: 'right', 
             distance: "300px",
             duration: 800,
@@ -56,7 +73,7 @@ function runTimelineAnimation() {
     } else {
         console.log("Desktop detected");
 
-        sr.reveal('.js--fadeInLeft', { 
+        sr.reveal(`${section} .js--fadeInLeft`, { 
             origin: 'left', 
             distance: "300px",
             duration: 800,
@@ -64,7 +81,7 @@ function runTimelineAnimation() {
             reset: false 
         });
 
-        sr.reveal('.js--fadeInRight', { 
+        sr.reveal(`${section} .js--fadeInRight`, { 
             origin: 'right', 
             distance: "300px",
             duration: 800,
