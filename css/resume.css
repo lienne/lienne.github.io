@@ -310,24 +310,25 @@ a:hover, a:focus, a:active {
   color: #80ced6;
 }
 
-img {
+.icon-imgs {
   width: 128px;
   height: 128px;
 }
 
-.main {
+.skills {
   padding: 20px;
   display: flex;
   justify-content: space-around;
 }
 
 .skill {
+  padding: 20px;
   text-align: center;
 }
 
 
 .skill h4 {
-  color: #eee;
+  color: #80ced6;
 }
 
 .skill p {
