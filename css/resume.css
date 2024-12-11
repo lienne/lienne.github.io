@@ -18,7 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed';
+  /* font-family: 'Saira Extra Condensed'; */
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -307,4 +308,28 @@ a:hover, a:focus, a:active {
 
 .footer-social-icons {
   color: #80ced6;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  text-align: center;
+}
+
+
+.skill h4 {
+  color: #eee;
+}
+
+.skill p {
+  line-height:5px;
 }
