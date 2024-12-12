@@ -322,6 +322,7 @@ a:hover, a:focus, a:active {
 }
 
 .skill {
+  margin: 1rem;
   padding: 20px;
   text-align: center;
 }
