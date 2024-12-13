@@ -335,3 +335,85 @@ a:hover, a:focus, a:active {
 .skill p {
   line-height:5px;
 }
+
+.responsive-iframe {
+  width: 100%;
+  max-width: 560px; /* Original width */
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.snow {
+  color: white;
+  font-size: 3em;
+}
+
+@keyframes fall {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.flake {
+  position: fixed;
+  top: -20%;
+  animation: fall 10s linear infinite;
+}
+
+.flake:nth-last-of-type(0) {
+  left: 0%;
+  animation-delay: 0s;
+}
+
+.flake:nth-last-of-type(1) {
+  left: 0%;
+  animation-delay: 0s;
+}
+
+.flake:nth-last-of-type(2) {
+  left: 10%;
+  animation-delay: 3s;
+}
+
+.flake:nth-last-of-type(3) {
+  left: 20%;
+  animation-delay: 5s;
+}
+
+.flake:nth-last-of-type(4) {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.flake:nth-last-of-type(5) {
+  left: 40%;
+  animation-delay: 1s;
+}
+
+.flake:nth-last-of-type(6) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.flake:nth-last-of-type(7) {
+  left: 60%;
+  animation-delay: 3s;
+}
+
+.flake:nth-last-of-type(8) {
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.flake:nth-last-of-type(9) {
+  left: 80%;
+  animation-delay: 0s;
+}
+
+.flake:nth-last-of-type(10) {
+  left: 90%;
+  animation-delay: 6s;
+}
